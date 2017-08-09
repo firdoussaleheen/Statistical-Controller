@@ -1,0 +1,1701 @@
+-- ******** Model variables ***************************************************
+
+group "Model Root"
+{
+ flags: COLLAPSED
+}
+	group "deconcatanation" -- block-group
+	{
+	 block: "Stateflow"
+	 desc:  ""
+	 flags: BLOCK|COLLAPSED
+	}
+		p_dSPACE_SIMULINK_MCV_2X_B_real_T_0[60]
+		{
+		 type:    flt(64,IEEE)*
+		 alias:   "x"
+		 desc:    ""
+		 flags:   OUTPUT|READONLY
+		}
+		p_dSPACE_SIMULINK_MCV_2X_B_real_T_0[61]
+		{
+		 type:    flt(64,IEEE)*
+		 alias:   "y"
+		 desc:    ""
+		 flags:   OUTPUT|READONLY
+		}
+
+
+	endgroup -- block-group "deconcatanation"
+
+	group "Clock" -- block-group
+	{
+	 block: "Clock"
+	 desc:  ""
+	 flags: BLOCK|COLLAPSED
+	}
+		p_dSPACE_SIMULINK_MCV_2X_B_real_T_0[0]
+		{
+		 type:    flt(64,IEEE)*
+		 alias:   "Out1"
+		 desc:    ""
+		 flags:   OUTPUT|READONLY
+		}
+
+
+	endgroup -- block-group "Clock"
+
+	group "LASER\nEnable" -- block-group
+	{
+	 block: "Constant"
+	 desc:  ""
+	 flags: BLOCK|COLLAPSED
+	}
+		-- Skipping output Out1
+		p_dSPACE_SIMULINK_MCV_2X_P_real_T_0[98]
+		{
+		 type:    flt(64,IEEE)*
+		 alias:   "Value"
+		 value:   1.0
+		 flags:   PARAM
+		}
+
+
+	endgroup -- block-group "LASER\nEnable"
+
+	group "Setpoint X1" -- block-group
+	{
+	 block: "Constant"
+	 desc:  ""
+	 flags: BLOCK|COLLAPSED
+	}
+		-- Skipping output Out1
+		p_dSPACE_SIMULINK_MCV_2X_P_real_T_0[37]
+		{
+		 type:    flt(64,IEEE)*
+		 alias:   "Value"
+		 value:   0.5
+		 flags:   PARAM
+		}
+
+
+	endgroup -- block-group "Setpoint X1"
+
+	group "Setpoint X2" -- block-group
+	{
+	 block: "Constant"
+	 desc:  ""
+	 flags: BLOCK|COLLAPSED
+	}
+		-- Skipping output Out1
+		p_dSPACE_SIMULINK_MCV_2X_P_real_T_0[18]
+		{
+		 type:    flt(64,IEEE)*
+		 alias:   "Value"
+		 value:   0.5
+		 flags:   PARAM
+		}
+
+
+	endgroup -- block-group "Setpoint X2"
+
+	group "Signal filler" -- block-group
+	{
+	 block: "Constant"
+	 desc:  ""
+	 flags: BLOCK|COLLAPSED
+	}
+		-- Skipping output Out1
+		p_dSPACE_SIMULINK_MCV_2X_P_real_T_0[0]
+		{
+		 type:    dSPACE_SIMULINK_MCV_2X_ArrayDT0_2*
+		 alias:   "Value"
+		 value:   [0.5, 1.0]
+		 flags:   PARAM
+		}
+
+
+	endgroup -- block-group "Signal filler"
+
+	group "Signal filler1" -- block-group
+	{
+	 block: "Constant"
+	 desc:  ""
+	 flags: BLOCK|COLLAPSED
+	}
+		-- Skipping output Out1
+		p_dSPACE_SIMULINK_MCV_2X_P_real_T_0[38]
+		{
+		 type:    dSPACE_SIMULINK_MCV_2X_ArrayDT0_2*
+		 alias:   "Value"
+		 value:   [0.5, 1.0]
+		 flags:   PARAM
+		}
+
+
+	endgroup -- block-group "Signal filler1"
+
+	group "cm conversion\nfactor1" -- block-group
+	{
+	 block: "Constant"
+	 desc:  ""
+	 flags: BLOCK|COLLAPSED
+	}
+		-- Skipping output Out1
+		p_dSPACE_SIMULINK_MCV_2X_P_real_T_0[85]
+		{
+		 type:    flt(64,IEEE)*
+		 alias:   "Value"
+		 value:   0.063125
+		 flags:   PARAM
+		}
+
+
+	endgroup -- block-group "cm conversion\nfactor1"
+
+	group "cm conversion\nfactor2" -- block-group
+	{
+	 block: "Constant"
+	 desc:  ""
+	 flags: BLOCK|COLLAPSED
+	}
+		-- Skipping output Out1
+		p_dSPACE_SIMULINK_MCV_2X_P_real_T_0[56]
+		{
+		 type:    flt(64,IEEE)*
+		 alias:   "Value"
+		 value:   0.063125
+		 flags:   PARAM
+		}
+
+
+	endgroup -- block-group "cm conversion\nfactor2"
+
+	group "Demux" -- block-group
+	{
+	 block: "Demux"
+	 desc:  ""
+	 flags: BLOCK|COLLAPSED
+	}
+		p_dSPACE_SIMULINK_MCV_2X_B_real_T_0[15]
+		{
+		 type:    flt(64,IEEE)*
+		 alias:   "Out1"
+		 desc:    ""
+		 flags:   OUTPUT|READONLY
+		}
+		p_dSPACE_SIMULINK_MCV_2X_B_real_T_0[16]
+		{
+		 type:    flt(64,IEEE)*
+		 alias:   "Out2"
+		 desc:    ""
+		 flags:   OUTPUT|READONLY
+		}
+		p_dSPACE_SIMULINK_MCV_2X_B_real_T_0[17]
+		{
+		 type:    flt(64,IEEE)*
+		 alias:   "Out3"
+		 desc:    ""
+		 flags:   OUTPUT|READONLY
+		}
+		p_dSPACE_SIMULINK_MCV_2X_B_real_T_0[18]
+		{
+		 type:    flt(64,IEEE)*
+		 alias:   "Out4"
+		 desc:    ""
+		 flags:   OUTPUT|READONLY
+		}
+
+
+	endgroup -- block-group "Demux"
+
+	group "Demux1" -- block-group
+	{
+	 block: "Demux"
+	 desc:  ""
+	 flags: BLOCK|COLLAPSED
+	}
+		p_dSPACE_SIMULINK_MCV_2X_B_real_T_0[2]
+		{
+		 type:    flt(64,IEEE)*
+		 alias:   "Out1"
+		 desc:    ""
+		 flags:   OUTPUT|READONLY
+		}
+		p_dSPACE_SIMULINK_MCV_2X_B_real_T_0[3]
+		{
+		 type:    flt(64,IEEE)*
+		 alias:   "Out2"
+		 desc:    ""
+		 flags:   OUTPUT|READONLY
+		}
+		p_dSPACE_SIMULINK_MCV_2X_B_real_T_0[4]
+		{
+		 type:    flt(64,IEEE)*
+		 alias:   "Out3"
+		 desc:    ""
+		 flags:   OUTPUT|READONLY
+		}
+		p_dSPACE_SIMULINK_MCV_2X_B_real_T_0[5]
+		{
+		 type:    flt(64,IEEE)*
+		 alias:   "Out4"
+		 desc:    ""
+		 flags:   OUTPUT|READONLY
+		}
+
+
+	endgroup -- block-group "Demux1"
+
+	group "MCV Controller X" -- block-group
+	{
+	 block: "Gain"
+	 desc:  ""
+	 flags: BLOCK|COLLAPSED
+	}
+		p_dSPACE_SIMULINK_MCV_2X_B_real_T_0[19]
+		{
+		 type:    flt(64,IEEE)*
+		 alias:   "Out1"
+		 desc:    ""
+		 flags:   OUTPUT|READONLY
+		}
+		p_dSPACE_SIMULINK_MCV_2X_P_real_T_0[28]
+		{
+		 type:    dSPACE_SIMULINK_MCV_2X_ArrayDT0_4*
+		 alias:   "Gain"
+		 value:   [1.1217660261094395, 21.267720276262494, 1.4262544862692741, 0.93822883881461672]
+		 flags:   PARAM|READONLY
+		}
+
+
+	endgroup -- block-group "MCV Controller X"
+
+	group "MCV Controller Y" -- block-group
+	{
+	 block: "Gain"
+	 desc:  ""
+	 flags: BLOCK|COLLAPSED
+	}
+		p_dSPACE_SIMULINK_MCV_2X_B_real_T_0[6]
+		{
+		 type:    flt(64,IEEE)*
+		 alias:   "Out1"
+		 desc:    ""
+		 flags:   OUTPUT|READONLY
+		}
+		p_dSPACE_SIMULINK_MCV_2X_P_real_T_0[9]
+		{
+		 type:    dSPACE_SIMULINK_MCV_2X_ArrayDT0_4*
+		 alias:   "Gain"
+		 value:   [6.7287176177847039, 262.03099362102864, 43.356254521295774, 27.827405950463969]
+		 flags:   PARAM|READONLY
+		}
+
+
+	endgroup -- block-group "MCV Controller Y"
+
+	group "Mux" -- block-group
+	{
+	 block: "Mux"
+	 desc:  ""
+	 flags: BLOCK|COLLAPSED
+	}
+		p_dSPACE_SIMULINK_MCV_2X_B_real_T_0[25]
+		{
+		 type:    flt(64,IEEE)*
+		 alias:   "Out1{SubArray1}"
+		 desc:    ""
+		 flags:   OUTPUT|READONLY
+		}
+		p_dSPACE_SIMULINK_MCV_2X_B_real_T_0[13]
+		{
+		 type:    flt(64,IEEE)*
+		 alias:   "Out1{SubArray2}"
+		 desc:    ""
+		 flags:   OUTPUT|READONLY
+		}
+
+
+	endgroup -- block-group "Mux"
+
+	group "Mux1" -- block-group
+	{
+	 block: "Mux"
+	 desc:  ""
+	 flags: BLOCK|COLLAPSED
+	}
+		p_dSPACE_SIMULINK_MCV_2X_B_real_T_0[12]
+		{
+		 type:    flt(64,IEEE)*
+		 alias:   "Out1{SubArray1}"
+		 desc:    ""
+		 flags:   OUTPUT|READONLY
+		}
+		p_dSPACE_SIMULINK_MCV_2X_B_real_T_0[13]
+		{
+		 type:    flt(64,IEEE)*
+		 alias:   "Out1{SubArray2}"
+		 desc:    ""
+		 flags:   OUTPUT|READONLY
+		}
+
+
+	endgroup -- block-group "Mux1"
+
+	group "Product1" -- block-group
+	{
+	 block: "Product"
+	 desc:  ""
+	 flags: BLOCK|COLLAPSED
+	}
+		p_dSPACE_SIMULINK_MCV_2X_B_real_T_0[30]
+		{
+		 type:    flt(64,IEEE)*
+		 alias:   "Out1"
+		 desc:    ""
+		 flags:   OUTPUT|READONLY
+		}
+
+
+	endgroup -- block-group "Product1"
+
+	group "Product2" -- block-group
+	{
+	 block: "Product"
+	 desc:  ""
+	 flags: BLOCK|COLLAPSED
+	}
+		p_dSPACE_SIMULINK_MCV_2X_B_real_T_0[47]
+		{
+		 type:    flt(64,IEEE)*
+		 alias:   "Out1"
+		 desc:    ""
+		 flags:   OUTPUT|READONLY
+		}
+
+
+	endgroup -- block-group "Product2"
+
+	group "Saturation" -- block-group
+	{
+	 block: "Saturate"
+	 desc:  ""
+	 flags: BLOCK|COLLAPSED
+	}
+		p_dSPACE_SIMULINK_MCV_2X_B_real_T_0[24]
+		{
+		 type:    flt(64,IEEE)*
+		 alias:   "Out1"
+		 desc:    ""
+		 flags:   OUTPUT|READONLY
+		}
+		p_dSPACE_SIMULINK_MCV_2X_P_real_T_0[35]
+		{
+		 type:    flt(64,IEEE)*
+		 alias:   "UpperLimit"
+		 value:   0.5
+		 flags:   PARAM
+		}
+		p_dSPACE_SIMULINK_MCV_2X_P_real_T_0[36]
+		{
+		 type:    flt(64,IEEE)*
+		 alias:   "LowerLimit"
+		 value:   -0.5
+		 flags:   PARAM
+		}
+
+
+	endgroup -- block-group "Saturation"
+
+	group "Saturation1" -- block-group
+	{
+	 block: "Saturate"
+	 desc:  ""
+	 flags: BLOCK|COLLAPSED
+	}
+		p_dSPACE_SIMULINK_MCV_2X_B_real_T_0[11]
+		{
+		 type:    flt(64,IEEE)*
+		 alias:   "Out1"
+		 desc:    ""
+		 flags:   OUTPUT|READONLY
+		}
+		p_dSPACE_SIMULINK_MCV_2X_P_real_T_0[16]
+		{
+		 type:    flt(64,IEEE)*
+		 alias:   "UpperLimit"
+		 value:   0.5
+		 flags:   PARAM
+		}
+		p_dSPACE_SIMULINK_MCV_2X_P_real_T_0[17]
+		{
+		 type:    flt(64,IEEE)*
+		 alias:   "LowerLimit"
+		 value:   -0.5
+		 flags:   PARAM
+		}
+
+
+	endgroup -- block-group "Saturation1"
+
+	group "Step X" -- block-group
+	{
+	 block: "Step"
+	 desc:  ""
+	 flags: BLOCK|COLLAPSED
+	}
+		p_dSPACE_SIMULINK_MCV_2X_B_real_T_0[14]
+		{
+		 type:    flt(64,IEEE)*
+		 alias:   "Out1"
+		 desc:    ""
+		 flags:   OUTPUT|READONLY
+		}
+		p_dSPACE_SIMULINK_MCV_2X_P_real_T_0[21]
+		{
+		 type:    flt(64,IEEE)*
+		 alias:   "Time"
+		 value:   0.0
+		 flags:   PARAM
+		}
+		p_dSPACE_SIMULINK_MCV_2X_P_real_T_0[22]
+		{
+		 type:    flt(64,IEEE)*
+		 alias:   "Before"
+		 value:   0.0
+		 flags:   PARAM
+		}
+		p_dSPACE_SIMULINK_MCV_2X_P_real_T_0[23]
+		{
+		 type:    flt(64,IEEE)*
+		 alias:   "After"
+		 value:   15.15
+		 flags:   PARAM
+		}
+
+
+	endgroup -- block-group "Step X"
+
+	group "Step Y" -- block-group
+	{
+	 block: "Step"
+	 desc:  ""
+	 flags: BLOCK|COLLAPSED
+	}
+		p_dSPACE_SIMULINK_MCV_2X_B_real_T_0[1]
+		{
+		 type:    flt(64,IEEE)*
+		 alias:   "Out1"
+		 desc:    ""
+		 flags:   OUTPUT|READONLY
+		}
+		p_dSPACE_SIMULINK_MCV_2X_P_real_T_0[2]
+		{
+		 type:    flt(64,IEEE)*
+		 alias:   "Time"
+		 value:   0.0
+		 flags:   PARAM
+		}
+		p_dSPACE_SIMULINK_MCV_2X_P_real_T_0[3]
+		{
+		 type:    flt(64,IEEE)*
+		 alias:   "Before"
+		 value:   0.0
+		 flags:   PARAM
+		}
+		p_dSPACE_SIMULINK_MCV_2X_P_real_T_0[4]
+		{
+		 type:    flt(64,IEEE)*
+		 alias:   "After"
+		 value:   15.15
+		 flags:   PARAM
+		}
+
+
+	endgroup -- block-group "Step Y"
+
+	group "DC Pitch" -- block-group
+	{
+	 block: "Sum"
+	 desc:  ""
+	 flags: BLOCK|COLLAPSED
+	}
+		p_dSPACE_SIMULINK_MCV_2X_B_real_T_0[12]
+		{
+		 type:    flt(64,IEEE)*
+		 alias:   "Out1"
+		 desc:    ""
+		 flags:   OUTPUT|READONLY
+		}
+
+
+	endgroup -- block-group "DC Pitch"
+
+	group "DC Yaw" -- block-group
+	{
+	 block: "Sum"
+	 desc:  ""
+	 flags: BLOCK|COLLAPSED
+	}
+		p_dSPACE_SIMULINK_MCV_2X_B_real_T_0[25]
+		{
+		 type:    flt(64,IEEE)*
+		 alias:   "Out1"
+		 desc:    ""
+		 flags:   OUTPUT|READONLY
+		}
+
+
+	endgroup -- block-group "DC Yaw"
+
+	group "Error X" -- block-group
+	{
+	 block: "Sum"
+	 desc:  ""
+	 flags: BLOCK|COLLAPSED
+	}
+		p_dSPACE_SIMULINK_MCV_2X_B_real_T_0[20]
+		{
+		 type:    flt(64,IEEE)*
+		 alias:   "Out1"
+		 desc:    ""
+		 flags:   OUTPUT|READONLY
+		}
+
+
+	endgroup -- block-group "Error X"
+
+	group "Error Y" -- block-group
+	{
+	 block: "Sum"
+	 desc:  ""
+	 flags: BLOCK|COLLAPSED
+	}
+		p_dSPACE_SIMULINK_MCV_2X_B_real_T_0[7]
+		{
+		 type:    flt(64,IEEE)*
+		 alias:   "Out1"
+		 desc:    ""
+		 flags:   OUTPUT|READONLY
+		}
+
+
+	endgroup -- block-group "Error Y"
+
+  
+  
+	group "DS1104DAC_C1" -- subsystem-group
+	{
+	 flags: COLLAPSED
+	 desc:  ""
+	}
+
+	endgroup -- subsystem-group "DS1104DAC_C1"
+  
+  
+	group "DS1104SER_RX" -- subsystem-group
+	{
+	 flags: COLLAPSED
+	 desc:  ""
+	}
+
+		p_dSPACE_SIMULINK_MCV_2X_B_uint8_T_1[0]
+		{
+		 type:    dSPACE_SIMULINK_MCV_2X_ArrayDT3_8*
+		 alias:   "RXBytes"
+		 desc:    ""
+		 flags:   OUTPUT|READONLY
+		}
+	endgroup -- subsystem-group "DS1104SER_RX"
+  
+  
+	group "DS1104SER_SETUP" -- subsystem-group
+	{
+	 flags: COLLAPSED
+	 desc:  ""
+	}
+
+	endgroup -- subsystem-group "DS1104SER_SETUP"
+  
+  
+	group "DS1104SL_DSP_PWM" -- subsystem-group
+	{
+	 flags: COLLAPSED
+	 desc:  ""
+	}
+
+	endgroup -- subsystem-group "DS1104SL_DSP_PWM"
+  
+  
+	group "Estimator X" -- subsystem-group
+	{
+	 flags: COLLAPSED
+	 desc:  ""
+	}
+
+		p_dSPACE_SIMULINK_MCV_2X_B_real_T_0[15]
+		{
+		 type:    dSPACE_SIMULINK_MCV_2X_ArrayDT0_4*
+		 alias:   "xe"
+		 desc:    ""
+		 flags:   OUTPUT|READONLY
+		}
+
+		group "r" -- block-group
+		{
+		 block: "Inport"
+		 desc:  ""
+		 flags: BLOCK|COLLAPSED
+		}
+			p_dSPACE_SIMULINK_MCV_2X_B_real_T_0[14]
+			{
+			 type:    flt(64,IEEE)*
+			 alias:   "Out1"
+			 desc:    ""
+			 flags:   OUTPUT|READONLY
+			}
+
+
+		endgroup -- block-group "r"
+
+		group "y" -- block-group
+		{
+		 block: "Inport"
+		 desc:  ""
+		 flags: BLOCK|COLLAPSED
+		}
+			p_dSPACE_SIMULINK_MCV_2X_B_real_T_0[30]
+			{
+			 type:    flt(64,IEEE)*
+			 alias:   "Out1"
+			 desc:    ""
+			 flags:   OUTPUT|READONLY
+			}
+
+
+		endgroup -- block-group "y"
+
+		group "A" -- block-group
+		{
+		 block: "Gain"
+		 desc:  ""
+		 flags: BLOCK|COLLAPSED
+		}
+			p_dSPACE_SIMULINK_MCV_2X_B_real_T_0[26]
+			{
+			 type:    dSPACE_SIMULINK_MCV_2X_ArrayDT0_4*
+			 alias:   "Out1"
+			 desc:    ""
+			 flags:   OUTPUT|READONLY
+			}
+			p_dSPACE_SIMULINK_MCV_2X_P_real_T_0[40]
+			{
+			 type:    dSPACE_SIMULINK_MCV_2X_ArrayDT0_4_4_Col*
+			 alias:   "Gain"
+			 value:   [0.0, -1.2159110647906897E-5, 0.0, -17.058022899430579, 102.80357142857143, -0.017230769230769234, 0.0, -323.405461608958, 0.0, 67.500000000000014, -1001.6480214539994, -21.688196220005089, 0.0, 0.0, 124.89320080928979, -206.26708301455059]
+			 flags:   PARAM|READONLY
+			}
+
+
+		endgroup -- block-group "A"
+
+		group "B" -- block-group
+		{
+		 block: "Gain"
+		 desc:  ""
+		 flags: BLOCK|COLLAPSED
+		}
+			p_dSPACE_SIMULINK_MCV_2X_B_real_T_0[35]
+			{
+			 type:    dSPACE_SIMULINK_MCV_2X_ArrayDT0_4*
+			 alias:   "Out1"
+			 desc:    ""
+			 flags:   OUTPUT|READONLY
+			}
+			p_dSPACE_SIMULINK_MCV_2X_P_real_T_0[61]
+			{
+			 type:    dSPACE_SIMULINK_MCV_2X_ArrayDT0_4_2_Col*
+			 alias:   "Gain"
+			 value:   [0.0, 0.0, 0.0, 15.206399999999999, 84.7903778566469, 34.96672380719837, 0.0, 0.0]
+			 flags:   PARAM|READONLY
+			}
+
+
+		endgroup -- block-group "B"
+
+		group "C1" -- block-group
+		{
+		 block: "Gain"
+		 desc:  ""
+		 flags: BLOCK|COLLAPSED
+		}
+			p_dSPACE_SIMULINK_MCV_2X_B_real_T_0[31]
+			{
+			 type:    flt(64,IEEE)*
+			 alias:   "Out1"
+			 desc:    ""
+			 flags:   OUTPUT|READONLY
+			}
+			p_dSPACE_SIMULINK_MCV_2X_P_real_T_0[57]
+			{
+			 type:    dSPACE_SIMULINK_MCV_2X_ArrayDT0_4*
+			 alias:   "Gain"
+			 value:   [1.0, 0.0, 0.0, 0.0]
+			 flags:   PARAM|READONLY
+			}
+
+
+		endgroup -- block-group "C1"
+
+		group "Integrator" -- block-group
+		{
+		 block: "Integrator"
+		 desc:  ""
+		 flags: BLOCK|COLLAPSED
+		}
+			p_dSPACE_SIMULINK_MCV_2X_B_real_T_0[15]
+			{
+			 type:    dSPACE_SIMULINK_MCV_2X_ArrayDT0_4*
+			 alias:   "Out1"
+			 desc:    ""
+			 flags:   OUTPUT|READONLY
+			}
+			p_dSPACE_SIMULINK_MCV_2X_X_real_T_0[4]
+			{
+			 type:    dSPACE_SIMULINK_MCV_2X_ArrayDT0_4*
+			 alias:   "ContState"
+			 flags: XCONT|READONLY
+			}
+			p_dSPACE_SIMULINK_MCV_2X_P_real_T_0[24]
+			{
+			 type:    dSPACE_SIMULINK_MCV_2X_ArrayDT0_4*
+			 alias:   "InitialCondition"
+			 value:   [0.0, 0.0, 0.0, 0.0]
+			 flags:   PARAM
+			}
+
+
+		endgroup -- block-group "Integrator"
+
+		group "Mux4" -- block-group
+		{
+		 block: "Mux"
+		 desc:  ""
+		 flags: BLOCK|COLLAPSED
+		}
+			p_dSPACE_SIMULINK_MCV_2X_B_real_T_0[14]
+			{
+			 type:    flt(64,IEEE)*
+			 alias:   "Out1{SubArray1}"
+			 desc:    ""
+			 flags:   OUTPUT|READONLY
+			}
+			p_dSPACE_SIMULINK_MCV_2X_B_real_T_0[32]
+			{
+			 type:    flt(64,IEEE)*
+			 alias:   "Out1{SubArray2}"
+			 desc:    ""
+			 flags:   OUTPUT|READONLY
+			}
+
+
+		endgroup -- block-group "Mux4"
+
+		group "Sum1" -- block-group
+		{
+		 block: "Sum"
+		 desc:  ""
+		 flags: BLOCK|COLLAPSED
+		}
+			p_dSPACE_SIMULINK_MCV_2X_B_real_T_0[39]
+			{
+			 type:    dSPACE_SIMULINK_MCV_2X_ArrayDT0_4*
+			 alias:   "Out1"
+			 desc:    ""
+			 flags:   OUTPUT|READONLY
+			}
+
+
+		endgroup -- block-group "Sum1"
+
+		group "Sum4" -- block-group
+		{
+		 block: "Sum"
+		 desc:  ""
+		 flags: BLOCK|COLLAPSED
+		}
+			p_dSPACE_SIMULINK_MCV_2X_B_real_T_0[32]
+			{
+			 type:    flt(64,IEEE)*
+			 alias:   "Out1"
+			 desc:    ""
+			 flags:   OUTPUT|READONLY
+			}
+
+
+		endgroup -- block-group "Sum4"
+
+
+
+	endgroup -- subsystem-group "Estimator X"
+  
+  
+	group "Estimator Y" -- subsystem-group
+	{
+	 flags: COLLAPSED
+	 desc:  ""
+	}
+
+		p_dSPACE_SIMULINK_MCV_2X_B_real_T_0[2]
+		{
+		 type:    dSPACE_SIMULINK_MCV_2X_ArrayDT0_4*
+		 alias:   "xe"
+		 desc:    ""
+		 flags:   OUTPUT|READONLY
+		}
+
+		group "r" -- block-group
+		{
+		 block: "Inport"
+		 desc:  ""
+		 flags: BLOCK|COLLAPSED
+		}
+			p_dSPACE_SIMULINK_MCV_2X_B_real_T_0[1]
+			{
+			 type:    flt(64,IEEE)*
+			 alias:   "Out1"
+			 desc:    ""
+			 flags:   OUTPUT|READONLY
+			}
+
+
+		endgroup -- block-group "r"
+
+		group "y" -- block-group
+		{
+		 block: "Inport"
+		 desc:  ""
+		 flags: BLOCK|COLLAPSED
+		}
+			p_dSPACE_SIMULINK_MCV_2X_B_real_T_0[47]
+			{
+			 type:    flt(64,IEEE)*
+			 alias:   "Out1"
+			 desc:    ""
+			 flags:   OUTPUT|READONLY
+			}
+
+
+		endgroup -- block-group "y"
+
+		group "A" -- block-group
+		{
+		 block: "Gain"
+		 desc:  ""
+		 flags: BLOCK|COLLAPSED
+		}
+			p_dSPACE_SIMULINK_MCV_2X_B_real_T_0[43]
+			{
+			 type:    dSPACE_SIMULINK_MCV_2X_ArrayDT0_4*
+			 alias:   "Out1"
+			 desc:    ""
+			 flags:   OUTPUT|READONLY
+			}
+			p_dSPACE_SIMULINK_MCV_2X_P_real_T_0[69]
+			{
+			 type:    dSPACE_SIMULINK_MCV_2X_ArrayDT0_4_4_Col*
+			 alias:   "Gain"
+			 value:   [0.0, -3.265103838319053E-5, 0.0, -25.579892895770328, 94.236607142857181, -0.017230769230769234, 0.0, -996.13702534970241, 0.0, 166.15384615384616, -1001.774615245475, -164.823137188158, 0.0, 0.0, 124.77817309431556, -297.78866646128381]
+			 flags:   PARAM|READONLY
+			}
+
+
+		endgroup -- block-group "A"
+
+		group "B" -- block-group
+		{
+		 block: "Gain"
+		 desc:  ""
+		 flags: BLOCK|COLLAPSED
+		}
+			p_dSPACE_SIMULINK_MCV_2X_B_real_T_0[52]
+			{
+			 type:    dSPACE_SIMULINK_MCV_2X_ArrayDT0_4*
+			 alias:   "Out1"
+			 desc:    ""
+			 flags:   OUTPUT|READONLY
+			}
+			p_dSPACE_SIMULINK_MCV_2X_P_real_T_0[90]
+			{
+			 type:    dSPACE_SIMULINK_MCV_2X_ArrayDT0_4_2_Col*
+			 alias:   "Gain"
+			 value:   [0.0, 0.0, 0.0, 3.8015999999999996, 127.37526264624336, 86.083625175534223, 0.0, 0.0]
+			 flags:   PARAM|READONLY
+			}
+
+
+		endgroup -- block-group "B"
+
+		group "C1" -- block-group
+		{
+		 block: "Gain"
+		 desc:  ""
+		 flags: BLOCK|COLLAPSED
+		}
+			p_dSPACE_SIMULINK_MCV_2X_B_real_T_0[48]
+			{
+			 type:    flt(64,IEEE)*
+			 alias:   "Out1"
+			 desc:    ""
+			 flags:   OUTPUT|READONLY
+			}
+			p_dSPACE_SIMULINK_MCV_2X_P_real_T_0[86]
+			{
+			 type:    dSPACE_SIMULINK_MCV_2X_ArrayDT0_4*
+			 alias:   "Gain"
+			 value:   [1.0, 0.0, 0.0, 0.0]
+			 flags:   PARAM|READONLY
+			}
+
+
+		endgroup -- block-group "C1"
+
+		group "Integrator" -- block-group
+		{
+		 block: "Integrator"
+		 desc:  ""
+		 flags: BLOCK|COLLAPSED
+		}
+			p_dSPACE_SIMULINK_MCV_2X_B_real_T_0[2]
+			{
+			 type:    dSPACE_SIMULINK_MCV_2X_ArrayDT0_4*
+			 alias:   "Out1"
+			 desc:    ""
+			 flags:   OUTPUT|READONLY
+			}
+			p_dSPACE_SIMULINK_MCV_2X_X_real_T_0[0]
+			{
+			 type:    dSPACE_SIMULINK_MCV_2X_ArrayDT0_4*
+			 alias:   "ContState"
+			 flags: XCONT|READONLY
+			}
+			p_dSPACE_SIMULINK_MCV_2X_P_real_T_0[5]
+			{
+			 type:    dSPACE_SIMULINK_MCV_2X_ArrayDT0_4*
+			 alias:   "InitialCondition"
+			 value:   [0.0, 0.0, 0.0, 0.0]
+			 flags:   PARAM
+			}
+
+
+		endgroup -- block-group "Integrator"
+
+		group "Mux4" -- block-group
+		{
+		 block: "Mux"
+		 desc:  ""
+		 flags: BLOCK|COLLAPSED
+		}
+			p_dSPACE_SIMULINK_MCV_2X_B_real_T_0[1]
+			{
+			 type:    flt(64,IEEE)*
+			 alias:   "Out1{SubArray1}"
+			 desc:    ""
+			 flags:   OUTPUT|READONLY
+			}
+			p_dSPACE_SIMULINK_MCV_2X_B_real_T_0[49]
+			{
+			 type:    flt(64,IEEE)*
+			 alias:   "Out1{SubArray2}"
+			 desc:    ""
+			 flags:   OUTPUT|READONLY
+			}
+
+
+		endgroup -- block-group "Mux4"
+
+		group "Sum1" -- block-group
+		{
+		 block: "Sum"
+		 desc:  ""
+		 flags: BLOCK|COLLAPSED
+		}
+			p_dSPACE_SIMULINK_MCV_2X_B_real_T_0[56]
+			{
+			 type:    dSPACE_SIMULINK_MCV_2X_ArrayDT0_4*
+			 alias:   "Out1"
+			 desc:    ""
+			 flags:   OUTPUT|READONLY
+			}
+
+
+		endgroup -- block-group "Sum1"
+
+		group "Sum4" -- block-group
+		{
+		 block: "Sum"
+		 desc:  ""
+		 flags: BLOCK|COLLAPSED
+		}
+			p_dSPACE_SIMULINK_MCV_2X_B_real_T_0[49]
+			{
+			 type:    flt(64,IEEE)*
+			 alias:   "Out1"
+			 desc:    ""
+			 flags:   OUTPUT|READONLY
+			}
+
+
+		endgroup -- block-group "Sum4"
+
+
+
+	endgroup -- subsystem-group "Estimator Y"
+  
+  
+	group "PWM ENABLE CONTROL" -- subsystem-group
+	{
+	 flags: COLLAPSED
+	 desc:  ""
+	}
+
+		p_dSPACE_SIMULINK_MCV_2X_B_real_T_0[13]
+		{
+		 type:    flt(64,IEEE)*
+		 alias:   "PWM\nenable"
+		 desc:    ""
+		 flags:   OUTPUT|READONLY
+		}
+
+		group "x" -- block-group
+		{
+		 block: "Inport"
+		 desc:  ""
+		 flags: BLOCK|COLLAPSED
+		}
+			p_dSPACE_SIMULINK_MCV_2X_B_real_T_0[60]
+			{
+			 type:    flt(64,IEEE)*
+			 alias:   "Out1"
+			 desc:    ""
+			 flags:   OUTPUT|READONLY
+			}
+
+
+		endgroup -- block-group "x"
+
+		group "y" -- block-group
+		{
+		 block: "Inport"
+		 desc:  ""
+		 flags: BLOCK|COLLAPSED
+		}
+			p_dSPACE_SIMULINK_MCV_2X_B_real_T_0[61]
+			{
+			 type:    flt(64,IEEE)*
+			 alias:   "Out1"
+			 desc:    ""
+			 flags:   OUTPUT|READONLY
+			}
+
+
+		endgroup -- block-group "y"
+
+		group "Data Type Conversion" -- block-group
+		{
+		 block: "DataTypeConversion"
+		 desc:  ""
+		 flags: BLOCK|COLLAPSED
+		}
+			p_dSPACE_SIMULINK_MCV_2X_B_real_T_0[13]
+			{
+			 type:    flt(64,IEEE)*
+			 alias:   "Out1"
+			 desc:    ""
+			 flags:   OUTPUT|READONLY
+			}
+
+
+		endgroup -- block-group "Data Type Conversion"
+
+		group "Logical\nOperator" -- block-group
+		{
+		 block: "Logic"
+		 desc:  ""
+		 flags: BLOCK|COLLAPSED
+		}
+			p_dSPACE_SIMULINK_MCV_2X_B_boolean_T_2[2]
+			{
+			 type:    uint(8)*
+			 alias:   "Out1"
+			 desc:    ""
+			 range:   < 0 ; 1 >
+			 bitmask: 0x01
+			 flags:   OUTPUT|READONLY
+			}
+
+
+		endgroup -- block-group "Logical\nOperator"
+
+  
+  
+		group "Compare\nTo Constant" -- subsystem-group
+		{
+		 block: "Compare To Constant"
+		 flags: MASKED|COLLAPSED
+		 desc:  ""
+		}
+
+			p_dSPACE_SIMULINK_MCV_2X_B_boolean_T_2[0]
+			{
+			 type:    uint(8)*
+			 alias:   "y"
+			 desc:    ""
+			 range:   < 0 ; 1 >
+			 bitmask: 0x01
+			 flags:   OUTPUT|READONLY
+			}
+			MaskParam
+			{
+			 addr:   0xFFFF
+			 type:   flt(64,IEEE)
+			 alias:  "Constant value:"
+			 origin: "const"
+			 value:   381.0
+			 desc:   " Mask Parameter"
+			 flags:  MASKED|PARAM
+			}
+
+
+			group "u" -- block-group
+			{
+			 block: "Inport"
+			 desc:  ""
+			 flags: HIDDEN|BLOCK|COLLAPSED
+			}
+				p_dSPACE_SIMULINK_MCV_2X_B_real_T_0[60]
+				{
+				 type:    flt(64,IEEE)*
+				 alias:   "Out1"
+				 desc:    ""
+				 flags:   HIDDEN|OUTPUT|READONLY
+				}
+
+
+			endgroup -- block-group "u"
+
+			group "Constant" -- block-group
+			{
+			 block: "Constant"
+			 desc:  ""
+			 flags: HIDDEN|BLOCK|COLLAPSED
+			}
+				-- Skipping output Out1
+				p_dSPACE_SIMULINK_MCV_2X_P_real_T_0[19]
+				{
+				 type:    flt(64,IEEE)*
+				 alias:   "Value"
+				 value:   381.0
+				 flags:   HIDDEN|PARAM|READONLY
+				}
+
+
+			endgroup -- block-group "Constant"
+
+			group "Compare" -- block-group
+			{
+			 block: "RelationalOperator"
+			 desc:  ""
+			 flags: HIDDEN|BLOCK|COLLAPSED
+			}
+				p_dSPACE_SIMULINK_MCV_2X_B_boolean_T_2[0]
+				{
+				 type:    uint(8)*
+				 alias:   "Out1"
+				 desc:    ""
+				 range:   < 0 ; 1 >
+				 bitmask: 0x01
+				 flags:   HIDDEN|OUTPUT|READONLY
+				}
+
+
+			endgroup -- block-group "Compare"
+
+
+
+		endgroup -- subsystem-group "Compare\nTo Constant"
+  
+  
+		group "Compare\nTo Constant1" -- subsystem-group
+		{
+		 block: "Compare To Constant"
+		 flags: MASKED|COLLAPSED
+		 desc:  ""
+		}
+
+			p_dSPACE_SIMULINK_MCV_2X_B_boolean_T_2[1]
+			{
+			 type:    uint(8)*
+			 alias:   "y"
+			 desc:    ""
+			 range:   < 0 ; 1 >
+			 bitmask: 0x01
+			 flags:   OUTPUT|READONLY
+			}
+			MaskParam
+			{
+			 addr:   0xFFFF
+			 type:   flt(64,IEEE)
+			 alias:  "Constant value:"
+			 origin: "const"
+			 value:   381.0
+			 desc:   " Mask Parameter"
+			 flags:  MASKED|PARAM
+			}
+
+
+			group "u" -- block-group
+			{
+			 block: "Inport"
+			 desc:  ""
+			 flags: HIDDEN|BLOCK|COLLAPSED
+			}
+				p_dSPACE_SIMULINK_MCV_2X_B_real_T_0[61]
+				{
+				 type:    flt(64,IEEE)*
+				 alias:   "Out1"
+				 desc:    ""
+				 flags:   HIDDEN|OUTPUT|READONLY
+				}
+
+
+			endgroup -- block-group "u"
+
+			group "Constant" -- block-group
+			{
+			 block: "Constant"
+			 desc:  ""
+			 flags: HIDDEN|BLOCK|COLLAPSED
+			}
+				-- Skipping output Out1
+				p_dSPACE_SIMULINK_MCV_2X_P_real_T_0[20]
+				{
+				 type:    flt(64,IEEE)*
+				 alias:   "Value"
+				 value:   381.0
+				 flags:   HIDDEN|PARAM|READONLY
+				}
+
+
+			endgroup -- block-group "Constant"
+
+			group "Compare" -- block-group
+			{
+			 block: "RelationalOperator"
+			 desc:  ""
+			 flags: HIDDEN|BLOCK|COLLAPSED
+			}
+				p_dSPACE_SIMULINK_MCV_2X_B_boolean_T_2[1]
+				{
+				 type:    uint(8)*
+				 alias:   "Out1"
+				 desc:    ""
+				 range:   < 0 ; 1 >
+				 bitmask: 0x01
+				 flags:   HIDDEN|OUTPUT|READONLY
+				}
+
+
+			endgroup -- block-group "Compare"
+
+
+
+		endgroup -- subsystem-group "Compare\nTo Constant1"
+
+
+	endgroup -- subsystem-group "PWM ENABLE CONTROL"
+  
+  
+	group "RTI Data" -- subsystem-group
+	{
+	 flags: COLLAPSED
+	 desc:  ""
+	}
+
+	endgroup -- subsystem-group "RTI Data"
+  
+  
+	group "conversion \nto duty cycle delta" -- subsystem-group
+	{
+	 flags: COLLAPSED
+	 desc:  ""
+	}
+
+		p_dSPACE_SIMULINK_MCV_2X_B_real_T_0[23]
+		{
+		 type:    flt(64,IEEE)*
+		 alias:   "DC\ndelta"
+		 desc:    ""
+		 flags:   OUTPUT|READONLY
+		}
+
+		group "in" -- block-group
+		{
+		 block: "Inport"
+		 desc:  ""
+		 flags: BLOCK|COLLAPSED
+		}
+			p_dSPACE_SIMULINK_MCV_2X_B_real_T_0[20]
+			{
+			 type:    flt(64,IEEE)*
+			 alias:   "Out1"
+			 desc:    ""
+			 flags:   OUTPUT|READONLY
+			}
+
+
+		endgroup -- block-group "in"
+
+		group "gain" -- block-group
+		{
+		 block: "Gain"
+		 desc:  ""
+		 flags: BLOCK|COLLAPSED
+		}
+			p_dSPACE_SIMULINK_MCV_2X_B_real_T_0[21]
+			{
+			 type:    flt(64,IEEE)*
+			 alias:   "Out1"
+			 desc:    ""
+			 flags:   OUTPUT|READONLY
+			}
+			p_dSPACE_SIMULINK_MCV_2X_P_real_T_0[32]
+			{
+			 type:    flt(64,IEEE)*
+			 alias:   "Gain"
+			 value:   0.8
+			 flags:   PARAM
+			}
+
+
+		endgroup -- block-group "gain"
+
+		group "rad//s to rpm" -- block-group
+		{
+		 block: "Gain"
+		 desc:  ""
+		 flags: BLOCK|COLLAPSED
+		}
+			p_dSPACE_SIMULINK_MCV_2X_B_real_T_0[22]
+			{
+			 type:    flt(64,IEEE)*
+			 alias:   "Out1"
+			 desc:    ""
+			 flags:   OUTPUT|READONLY
+			}
+			p_dSPACE_SIMULINK_MCV_2X_P_real_T_0[33]
+			{
+			 type:    flt(64,IEEE)*
+			 alias:   "Gain"
+			 value:   9.5492965855137211
+			 flags:   PARAM
+			}
+
+
+		endgroup -- block-group "rad//s to rpm"
+
+		group "rpm to duty \ncycle delta" -- block-group
+		{
+		 block: "Gain"
+		 desc:  ""
+		 flags: BLOCK|COLLAPSED
+		}
+			p_dSPACE_SIMULINK_MCV_2X_B_real_T_0[23]
+			{
+			 type:    flt(64,IEEE)*
+			 alias:   "Out1"
+			 desc:    ""
+			 flags:   OUTPUT|READONLY
+			}
+			p_dSPACE_SIMULINK_MCV_2X_P_real_T_0[34]
+			{
+			 type:    flt(64,IEEE)*
+			 alias:   "Gain"
+			 value:   0.0017
+			 flags:   PARAM
+			}
+
+
+		endgroup -- block-group "rpm to duty \ncycle delta"
+
+
+
+	endgroup -- subsystem-group "conversion \nto duty cycle delta"
+  
+  
+	group "conversion \nto duty cycle delta1" -- subsystem-group
+	{
+	 flags: COLLAPSED
+	 desc:  ""
+	}
+
+		p_dSPACE_SIMULINK_MCV_2X_B_real_T_0[10]
+		{
+		 type:    flt(64,IEEE)*
+		 alias:   "DC\ndelta"
+		 desc:    ""
+		 flags:   OUTPUT|READONLY
+		}
+
+		group "in" -- block-group
+		{
+		 block: "Inport"
+		 desc:  ""
+		 flags: BLOCK|COLLAPSED
+		}
+			p_dSPACE_SIMULINK_MCV_2X_B_real_T_0[7]
+			{
+			 type:    flt(64,IEEE)*
+			 alias:   "Out1"
+			 desc:    ""
+			 flags:   OUTPUT|READONLY
+			}
+
+
+		endgroup -- block-group "in"
+
+		group "gain" -- block-group
+		{
+		 block: "Gain"
+		 desc:  ""
+		 flags: BLOCK|COLLAPSED
+		}
+			p_dSPACE_SIMULINK_MCV_2X_B_real_T_0[8]
+			{
+			 type:    flt(64,IEEE)*
+			 alias:   "Out1"
+			 desc:    ""
+			 flags:   OUTPUT|READONLY
+			}
+			p_dSPACE_SIMULINK_MCV_2X_P_real_T_0[13]
+			{
+			 type:    flt(64,IEEE)*
+			 alias:   "Gain"
+			 value:   0.8
+			 flags:   PARAM
+			}
+
+
+		endgroup -- block-group "gain"
+
+		group "rad//s to rpm" -- block-group
+		{
+		 block: "Gain"
+		 desc:  ""
+		 flags: BLOCK|COLLAPSED
+		}
+			p_dSPACE_SIMULINK_MCV_2X_B_real_T_0[9]
+			{
+			 type:    flt(64,IEEE)*
+			 alias:   "Out1"
+			 desc:    ""
+			 flags:   OUTPUT|READONLY
+			}
+			p_dSPACE_SIMULINK_MCV_2X_P_real_T_0[14]
+			{
+			 type:    flt(64,IEEE)*
+			 alias:   "Gain"
+			 value:   9.5492965855137211
+			 flags:   PARAM
+			}
+
+
+		endgroup -- block-group "rad//s to rpm"
+
+		group "rpm to duty \ncycle delta" -- block-group
+		{
+		 block: "Gain"
+		 desc:  ""
+		 flags: BLOCK|COLLAPSED
+		}
+			p_dSPACE_SIMULINK_MCV_2X_B_real_T_0[10]
+			{
+			 type:    flt(64,IEEE)*
+			 alias:   "Out1"
+			 desc:    ""
+			 flags:   OUTPUT|READONLY
+			}
+			p_dSPACE_SIMULINK_MCV_2X_P_real_T_0[15]
+			{
+			 type:    flt(64,IEEE)*
+			 alias:   "Gain"
+			 value:   -0.0017
+			 flags:   PARAM
+			}
+
+
+		endgroup -- block-group "rpm to duty \ncycle delta"
+
+
+
+	endgroup -- subsystem-group "conversion \nto duty cycle delta1"
+
+	p_dSPACE_SIMULINK_MCV_2X_B_real_T_0[25]
+	{
+	 type:    flt(64,IEEE)*
+	 alias:   "DCx"
+	 origin:  "dSPACE_SIMULINK_MCV_2X/DC Yaw/Out1"
+	 flags:   LABEL|READONLY
+	}
+	p_dSPACE_SIMULINK_MCV_2X_B_real_T_0[23]
+	{
+	 type:    flt(64,IEEE)*
+	 alias:   "DCxdel"
+	 origin:  "dSPACE_SIMULINK_MCV_2X/conversion \nto duty cycle delta/DC\\ndelta"
+	 flags:   LABEL|READONLY
+	}
+	p_dSPACE_SIMULINK_MCV_2X_B_real_T_0[12]
+	{
+	 type:    flt(64,IEEE)*
+	 alias:   "DCy"
+	 origin:  "dSPACE_SIMULINK_MCV_2X/DC Pitch/Out1"
+	 flags:   LABEL|READONLY
+	}
+	p_dSPACE_SIMULINK_MCV_2X_B_real_T_0[10]
+	{
+	 type:    flt(64,IEEE)*
+	 alias:   "DCydel"
+	 origin:  "dSPACE_SIMULINK_MCV_2X/conversion \nto duty cycle delta1/DC\\ndelta"
+	 flags:   LABEL|READONLY
+	}
+	p_dSPACE_SIMULINK_MCV_2X_B_real_T_0[60]
+	{
+	 type:    flt(64,IEEE)*
+	 alias:   "Px"
+	 origin:  "dSPACE_SIMULINK_MCV_2X/deconcatanation/x"
+	 flags:   LABEL|READONLY
+	}
+	p_dSPACE_SIMULINK_MCV_2X_B_real_T_0[61]
+	{
+	 type:    flt(64,IEEE)*
+	 alias:   "Py"
+	 origin:  "dSPACE_SIMULINK_MCV_2X/deconcatanation/y"
+	 flags:   LABEL|READONLY
+	}
+	p_dSPACE_SIMULINK_MCV_2X_B_real_T_0[0]
+	{
+	 type:    flt(64,IEEE)*
+	 alias:   "clock"
+	 origin:  "dSPACE_SIMULINK_MCV_2X/Clock/Out1"
+	 flags:   LABEL|READONLY
+	}
+	p_dSPACE_SIMULINK_MCV_2X_B_real_T_0[15]
+	{
+	 type:    flt(64,IEEE)*
+	 alias:   "fxe"
+	 origin:  "dSPACE_SIMULINK_MCV_2X/Demux/Out1"
+	 flags:   LABEL|READONLY
+	}
+	p_dSPACE_SIMULINK_MCV_2X_B_real_T_0[2]
+	{
+	 type:    flt(64,IEEE)*
+	 alias:   "fye"
+	 origin:  "dSPACE_SIMULINK_MCV_2X/Demux1/Out1"
+	 flags:   LABEL|READONLY
+	}
+	p_dSPACE_SIMULINK_MCV_2X_B_real_T_0[18]
+	{
+	 type:    flt(64,IEEE)*
+	 alias:   "iastarxe"
+	 origin:  "dSPACE_SIMULINK_MCV_2X/Demux/Out4"
+	 flags:   LABEL|READONLY
+	}
+	p_dSPACE_SIMULINK_MCV_2X_B_real_T_0[5]
+	{
+	 type:    flt(64,IEEE)*
+	 alias:   "iastarye"
+	 origin:  "dSPACE_SIMULINK_MCV_2X/Demux1/Out4"
+	 flags:   LABEL|READONLY
+	}
+	p_dSPACE_SIMULINK_MCV_2X_B_real_T_0[17]
+	{
+	 type:    flt(64,IEEE)*
+	 alias:   "iaxe"
+	 origin:  "dSPACE_SIMULINK_MCV_2X/Demux/Out3"
+	 flags:   LABEL|READONLY
+	}
+	p_dSPACE_SIMULINK_MCV_2X_B_real_T_0[4]
+	{
+	 type:    flt(64,IEEE)*
+	 alias:   "iaye"
+	 origin:  "dSPACE_SIMULINK_MCV_2X/Demux1/Out3"
+	 flags:   LABEL|READONLY
+	}
+	p_dSPACE_SIMULINK_MCV_2X_B_real_T_0[16]
+	{
+	 type:    flt(64,IEEE)*
+	 alias:   "omegaxe"
+	 origin:  "dSPACE_SIMULINK_MCV_2X/Demux/Out2"
+	 flags:   LABEL|READONLY
+	}
+	p_dSPACE_SIMULINK_MCV_2X_B_real_T_0[3]
+	{
+	 type:    flt(64,IEEE)*
+	 alias:   "omegaye"
+	 origin:  "dSPACE_SIMULINK_MCV_2X/Demux1/Out2"
+	 flags:   LABEL|READONLY
+	}
+	p_dSPACE_SIMULINK_MCV_2X_B_real_T_0[13]
+	{
+	 type:    flt(64,IEEE)*
+	 alias:   "pwm"
+	 origin:  "dSPACE_SIMULINK_MCV_2X/PWM ENABLE CONTROL/PWM\\nenable"
+	 flags:   LABEL|READONLY
+	}
+	p_dSPACE_SIMULINK_MCV_2X_B_real_T_0[20]
+	{
+	 type:    flt(64,IEEE)*
+	 alias:   "ux"
+	 origin:  "dSPACE_SIMULINK_MCV_2X/Error X/Out1"
+	 flags:   LABEL|READONLY
+	}
+	p_dSPACE_SIMULINK_MCV_2X_B_real_T_0[19]
+	{
+	 type:    flt(64,IEEE)*
+	 alias:   "uxx"
+	 origin:  "dSPACE_SIMULINK_MCV_2X/MCV Controller X/Out1"
+	 flags:   LABEL|READONLY
+	}
+	p_dSPACE_SIMULINK_MCV_2X_B_real_T_0[7]
+	{
+	 type:    flt(64,IEEE)*
+	 alias:   "uy"
+	 origin:  "dSPACE_SIMULINK_MCV_2X/Error Y/Out1"
+	 flags:   LABEL|READONLY
+	}
+	p_dSPACE_SIMULINK_MCV_2X_B_real_T_0[6]
+	{
+	 type:    flt(64,IEEE)*
+	 alias:   "uyy"
+	 origin:  "dSPACE_SIMULINK_MCV_2X/MCV Controller Y/Out1"
+	 flags:   LABEL|READONLY
+	}
+	p_dSPACE_SIMULINK_MCV_2X_B_real_T_0[30]
+	{
+	 type:    flt(64,IEEE)*
+	 alias:   "yx"
+	 origin:  "dSPACE_SIMULINK_MCV_2X/Product1/Out1"
+	 flags:   LABEL|READONLY
+	}
+	p_dSPACE_SIMULINK_MCV_2X_B_real_T_0[47]
+	{
+	 type:    flt(64,IEEE)*
+	 alias:   "yy"
+	 origin:  "dSPACE_SIMULINK_MCV_2X/Product2/Out1"
+	 flags:   LABEL|READONLY
+	}
+
+
+
+endgroup -- "Model Root"

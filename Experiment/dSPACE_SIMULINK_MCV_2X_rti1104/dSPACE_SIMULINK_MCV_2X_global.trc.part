@@ -1,0 +1,188 @@
+-- ******** Tunable Parameters ************************************************
+
+-- InlineParameters is off: no separate group for Tunable Parameters
+
+
+-- ******** State Machine Data ************************************************
+
+group "State Machine Data"
+{
+ flags: COLLAPSED
+}
+
+
+endgroup
+
+
+-- ******** Data Store Memories ***********************************************
+
+-- No Data Store Memories within the model.
+
+
+-- ******** Labels ************************************************************
+
+group "Labels"
+{
+ flags: COLLAPSED
+}
+	p_dSPACE_SIMULINK_MCV_2X_B_real_T_0[25]
+	{
+	 type:    flt(64,IEEE)*
+	 alias:   "DCx"
+	 origin:  "dSPACE_SIMULINK_MCV_2X/DC Yaw/Out1"
+	 flags:   LABEL|READONLY
+	}
+	p_dSPACE_SIMULINK_MCV_2X_B_real_T_0[23]
+	{
+	 type:    flt(64,IEEE)*
+	 alias:   "DCxdel"
+	 origin:  "dSPACE_SIMULINK_MCV_2X/conversion \nto duty cycle delta/DC\\ndelta"
+	 flags:   LABEL|READONLY
+	}
+	p_dSPACE_SIMULINK_MCV_2X_B_real_T_0[12]
+	{
+	 type:    flt(64,IEEE)*
+	 alias:   "DCy"
+	 origin:  "dSPACE_SIMULINK_MCV_2X/DC Pitch/Out1"
+	 flags:   LABEL|READONLY
+	}
+	p_dSPACE_SIMULINK_MCV_2X_B_real_T_0[10]
+	{
+	 type:    flt(64,IEEE)*
+	 alias:   "DCydel"
+	 origin:  "dSPACE_SIMULINK_MCV_2X/conversion \nto duty cycle delta1/DC\\ndelta"
+	 flags:   LABEL|READONLY
+	}
+	p_dSPACE_SIMULINK_MCV_2X_B_real_T_0[60]
+	{
+	 type:    flt(64,IEEE)*
+	 alias:   "Px"
+	 origin:  "dSPACE_SIMULINK_MCV_2X/deconcatanation/x"
+	 flags:   LABEL|READONLY
+	}
+	p_dSPACE_SIMULINK_MCV_2X_B_real_T_0[61]
+	{
+	 type:    flt(64,IEEE)*
+	 alias:   "Py"
+	 origin:  "dSPACE_SIMULINK_MCV_2X/deconcatanation/y"
+	 flags:   LABEL|READONLY
+	}
+	p_dSPACE_SIMULINK_MCV_2X_B_real_T_0[0]
+	{
+	 type:    flt(64,IEEE)*
+	 alias:   "clock"
+	 origin:  "dSPACE_SIMULINK_MCV_2X/Clock/Out1"
+	 flags:   LABEL|READONLY
+	}
+	p_dSPACE_SIMULINK_MCV_2X_B_real_T_0[15]
+	{
+	 type:    flt(64,IEEE)*
+	 alias:   "fxe"
+	 origin:  "dSPACE_SIMULINK_MCV_2X/Demux/Out1"
+	 flags:   LABEL|READONLY
+	}
+	p_dSPACE_SIMULINK_MCV_2X_B_real_T_0[2]
+	{
+	 type:    flt(64,IEEE)*
+	 alias:   "fye"
+	 origin:  "dSPACE_SIMULINK_MCV_2X/Demux1/Out1"
+	 flags:   LABEL|READONLY
+	}
+	p_dSPACE_SIMULINK_MCV_2X_B_real_T_0[18]
+	{
+	 type:    flt(64,IEEE)*
+	 alias:   "iastarxe"
+	 origin:  "dSPACE_SIMULINK_MCV_2X/Demux/Out4"
+	 flags:   LABEL|READONLY
+	}
+	p_dSPACE_SIMULINK_MCV_2X_B_real_T_0[5]
+	{
+	 type:    flt(64,IEEE)*
+	 alias:   "iastarye"
+	 origin:  "dSPACE_SIMULINK_MCV_2X/Demux1/Out4"
+	 flags:   LABEL|READONLY
+	}
+	p_dSPACE_SIMULINK_MCV_2X_B_real_T_0[17]
+	{
+	 type:    flt(64,IEEE)*
+	 alias:   "iaxe"
+	 origin:  "dSPACE_SIMULINK_MCV_2X/Demux/Out3"
+	 flags:   LABEL|READONLY
+	}
+	p_dSPACE_SIMULINK_MCV_2X_B_real_T_0[4]
+	{
+	 type:    flt(64,IEEE)*
+	 alias:   "iaye"
+	 origin:  "dSPACE_SIMULINK_MCV_2X/Demux1/Out3"
+	 flags:   LABEL|READONLY
+	}
+	p_dSPACE_SIMULINK_MCV_2X_B_real_T_0[16]
+	{
+	 type:    flt(64,IEEE)*
+	 alias:   "omegaxe"
+	 origin:  "dSPACE_SIMULINK_MCV_2X/Demux/Out2"
+	 flags:   LABEL|READONLY
+	}
+	p_dSPACE_SIMULINK_MCV_2X_B_real_T_0[3]
+	{
+	 type:    flt(64,IEEE)*
+	 alias:   "omegaye"
+	 origin:  "dSPACE_SIMULINK_MCV_2X/Demux1/Out2"
+	 flags:   LABEL|READONLY
+	}
+	p_dSPACE_SIMULINK_MCV_2X_B_real_T_0[13]
+	{
+	 type:    flt(64,IEEE)*
+	 alias:   "pwm"
+	 origin:  "dSPACE_SIMULINK_MCV_2X/PWM ENABLE CONTROL/PWM\\nenable"
+	 flags:   LABEL|READONLY
+	}
+	p_dSPACE_SIMULINK_MCV_2X_B_real_T_0[20]
+	{
+	 type:    flt(64,IEEE)*
+	 alias:   "ux"
+	 origin:  "dSPACE_SIMULINK_MCV_2X/Error X/Out1"
+	 flags:   LABEL|READONLY
+	}
+	p_dSPACE_SIMULINK_MCV_2X_B_real_T_0[19]
+	{
+	 type:    flt(64,IEEE)*
+	 alias:   "uxx"
+	 origin:  "dSPACE_SIMULINK_MCV_2X/MCV Controller X/Out1"
+	 flags:   LABEL|READONLY
+	}
+	p_dSPACE_SIMULINK_MCV_2X_B_real_T_0[7]
+	{
+	 type:    flt(64,IEEE)*
+	 alias:   "uy"
+	 origin:  "dSPACE_SIMULINK_MCV_2X/Error Y/Out1"
+	 flags:   LABEL|READONLY
+	}
+	p_dSPACE_SIMULINK_MCV_2X_B_real_T_0[6]
+	{
+	 type:    flt(64,IEEE)*
+	 alias:   "uyy"
+	 origin:  "dSPACE_SIMULINK_MCV_2X/MCV Controller Y/Out1"
+	 flags:   LABEL|READONLY
+	}
+	p_dSPACE_SIMULINK_MCV_2X_B_real_T_0[30]
+	{
+	 type:    flt(64,IEEE)*
+	 alias:   "yx"
+	 origin:  "dSPACE_SIMULINK_MCV_2X/Product1/Out1"
+	 flags:   LABEL|READONLY
+	}
+	p_dSPACE_SIMULINK_MCV_2X_B_real_T_0[47]
+	{
+	 type:    flt(64,IEEE)*
+	 alias:   "yy"
+	 origin:  "dSPACE_SIMULINK_MCV_2X/Product2/Out1"
+	 flags:   LABEL|READONLY
+	}
+
+endgroup
+
+-- ******** RTT Dynamic Variables *********************************************
+
+-- Generation of RTT Dynamic Variables turned off with EnableRealTimeTesting option.
+

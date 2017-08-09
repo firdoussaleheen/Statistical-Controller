@@ -1,0 +1,118 @@
+-- ******** Model Root Parameters from model_mrp.trc **************************
+group "Model Root Parameters"
+{
+ flags: WS|COLLAPSED
+}
+
+-- RTI_MRP_GROUP_BEGIN
+typedef Float64Ieee_ArrayType_4_4 float(64, IEEE)[4][4]
+typedef Float64Ieee_ArrayType_4_1 float(64, IEEE)[4][1]
+typedef Float64Ieee_ArrayType_1_4 float(64, IEEE)[1][4]
+
+
+   ModelRootParam
+   {
+      addr: 0xFFFF
+      type: Float64Ieee_ArrayType_4_4
+      alias: "Ap"
+      value: [ 0.0 94.236607142857181 0.0 0.0;  -3.265103838319053e-005 -0.017230769230769234 166.15384615384616 0.0;  0.0 0.0 -1001.774615245475 124.77817309431556;  0.0 0.0 0.0 -192.0]
+      flags: WS|PARAM
+      desc: "Workspace Parameter"
+   }
+   
+   ModelRootParam
+   {
+      addr: 0xFFFF
+      type: Float64Ieee_ArrayType_4_4
+      alias: "Ayaw"
+      value: [ 0.0 102.80357142857143 0.0 0.0;  -1.2159110647906897e-005 -0.017230769230769234 67.500000000000014 0.0;  0.0 0.0 -1001.6480214539994 124.89320080928979;  0.0 0.0 0.0 -192.0]
+      flags: WS|PARAM
+      desc: "Workspace Parameter"
+   }
+   
+   ModelRootParam
+   {
+      addr: 0xFFFF
+      type: Float64Ieee_ArrayType_4_1
+      alias: "Bp"
+      value: [ 0.0;  0.0;  0.0;  3.8015999999999996]
+      flags: WS|PARAM
+      desc: "Workspace Parameter"
+   }
+   
+   ModelRootParam
+   {
+      addr: 0xFFFF
+      type: Float64Ieee_ArrayType_4_1
+      alias: "Byaw"
+      value: [ 0.0;  0.0;  0.0;  15.206399999999999]
+      flags: WS|PARAM
+      desc: "Workspace Parameter"
+   }
+   
+   ModelRootParam
+   {
+      addr: 0xFFFF
+      type: Float64Ieee_ArrayType_1_4
+      alias: "Cp"
+      value: [ 1.0 0.0 0.0 0.0]
+      flags: WS|PARAM
+      desc: "Workspace Parameter"
+   }
+   
+   ModelRootParam
+   {
+      addr: 0xFFFF
+      type: Float64Ieee_ArrayType_1_4
+      alias: "Cyaw"
+      value: [ 1.0 0.0 0.0 0.0]
+      flags: WS|PARAM
+      desc: "Workspace Parameter"
+   }
+   
+   ModelRootParam
+   {
+      addr: 0xFFFF
+      type: Float64Ieee_ArrayType_4_1
+      alias: "Kpf"
+      value: [ 127.37526264624336;  86.083625175534223;  0.0;  0.0]
+      flags: WS|PARAM
+      desc: "Workspace Parameter"
+   }
+   
+   ModelRootParam
+   {
+      addr: 0xFFFF
+      type: Float64Ieee_ArrayType_1_4
+      alias: "Kpmcv"
+      value: [ 6.7287176177847039 262.03099362102864 43.356254521295774 27.827405950463969]
+      flags: WS|PARAM
+      desc: "Workspace Parameter"
+   }
+   
+   ModelRootParam
+   {
+      addr: 0xFFFF
+      type: Float64Ieee_ArrayType_4_1
+      alias: "Kyf"
+      value: [ 84.790377856646899;  34.96672380719837;  0.0;  0.0]
+      flags: WS|PARAM
+      desc: "Workspace Parameter"
+   }
+   
+   ModelRootParam
+   {
+      addr: 0xFFFF
+      type: Float64Ieee_ArrayType_1_4
+      alias: "Kymcv"
+      value: [ 1.1217660261094395 21.267720276262494 1.4262544862692741 0.93822883881461672]
+      flags: WS|PARAM
+      desc: "Workspace Parameter"
+   }
+   
+
+-- RTI_MRP_GROUP_END
+
+endgroup
+
+

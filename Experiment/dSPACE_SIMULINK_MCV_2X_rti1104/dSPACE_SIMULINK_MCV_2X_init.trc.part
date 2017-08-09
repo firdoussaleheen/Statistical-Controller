@@ -1,0 +1,118 @@
+-- ****************************************************************************
+--
+--  Trace file: dSPACE_SIMULINK_MCV_2X.trc
+--
+--  RTI1104 6.6 (29-Nov-2010)
+--  Tue Oct 08 20:27:24 2013
+--
+--  Used options:
+--    TRCGenerateVirtualBlocks      = 1
+--    TRCGenerateLabels             = 1
+--    TRCMaskParameters             = 1
+--    TRCGenerateStates             = 1
+--    TRCGenerateDerivatives        = 0
+--    TRCGenerateParamValues        = 1
+--    TRCGenerateApplicationKeyword = 0
+--    EnableRTWCodeReuse            = 1
+--    TRCOnlyGlobals                = 0
+--
+--  Trace file format: 2
+--
+--  (c) Copyright 2008, dSPACE GmbH. All rights reserved.
+--
+-- ****************************************************************************
+
+-- ******** Keywords **********************************************************
+
+-- _application "dSPACE_SIMULINK_MCV_2X.map"
+
+_genname     "RTI"
+_genversion  "6.6"
+_gendate     "10/08/2013 20:27:35"
+_description ""
+_author      "RTI1104 6.6 (29-Nov-2010)"
+_model       "dSPACE_SIMULINK_MCV_2X.mdl"
+_modelid     "2013100820273210011511297991019511510510911710810511010795109991189550120572"
+
+-- Default data type formats
+_floating_point_type(64,IEEE)
+_integer_type(32)
+
+-- No Data Capture blocks within model: use base sample time as sampling period
+sampling_period[0]
+{
+  value:       0.0001
+  alias:       "HostService"
+  increment:   0.0001
+  unit:        "s"
+}
+
+
+-- Type definitions for arrays
+typedef dSPACE_SIMULINK_MCV_2X_ArrayDT0_4 flt(64,IEEE)[4]
+typedef dSPACE_SIMULINK_MCV_2X_ArrayDT0_2 flt(64,IEEE)[2]
+typedef dSPACE_SIMULINK_MCV_2X_ArrayDT3_8 uint(8)[8]
+typedef dSPACE_SIMULINK_MCV_2X_ArrayDT0_4_4_Col col flt(64,IEEE)[4][4]
+typedef dSPACE_SIMULINK_MCV_2X_ArrayDT0_4_2_Col col flt(64,IEEE)[4][2]
+typedef dSPACE_SIMULINK_MCV_2X_ArrayDT10_4 int(32)[4]
+
+
+-- ******** Simulation control variables **************************************
+
+finalTime
+{
+ type:  flt(64,IEEE)*
+ alias: "finalTime"
+ desc:  "Simulation stop time. When reached, simState switches to STOP."
+ flags:  SYSTEM|READONLY
+ unit:  "s"
+}
+
+currentTime
+{
+ type:  flt(64,IEEE)*
+ alias: "currentTime"
+ desc:  "Current simulation time. Increments with execution of Timer Task 1."
+ flags: SYSTEM|READONLY
+ unit:  "s"
+}
+
+modelStepSize
+{
+ type:  flt(64,IEEE)
+ alias: "modelStepSize"
+ desc:  "Fixed step size of the model, sample time of Timer Task 1."
+ flags: SYSTEM|READONLY
+ unit:  "s"
+}
+
+simState
+{
+ type:  int(32)
+ alias: "simState"
+ desc:  "Simulation state: STOP=0 PAUSE=1 RUN=2"
+ value: 0
+ flags: SYSTEM
+ unit:  "-"
+}
+
+msg_last_error_no
+{
+ type:  uint(32)
+ alias: "errorNumber"
+ desc:  "Error number of last error message (zero if no error)."
+ unit:  "-"
+ flags: SYSTEM|READONLY
+}
+
+rtiAssertionMode
+{
+ type:  int(32)
+ alias: "rtiAssertionMode"
+ desc:  "Assertion Mode: OFF=0 WARN=1 STOP=2"
+ value: 0
+ flags: SYSTEM
+ unit:  "-"
+}
+
+
